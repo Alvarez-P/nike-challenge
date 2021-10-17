@@ -1,0 +1,85 @@
+/************************************************************
+                            GENERAL 
+************************************************************/
+
+/** Values **/
+
+:root {
+  --main-color: black;
+  --white: #fff;
+  --secondary-color: #e6e6e6;
+  --third-color: #222222;
+  --fifth-color: #d6d6d6;
+}
+
+@media (max-width: 700px) {
+  /************************************************************
+                            HEADER 
+  ************************************************************/
+  .divTopHeader {
+    width: 100%;
+  }
+  .divTopHeader div {
+    width: 100%;
+    justify-content: center;
+  }
+  .divTopLeftHeader {
+    display: flex;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color);
+    border-radius: 0;
+  }
+  .divTopHeader {
+    text-align: center;
+  }
+  .divTopHeader a {
+    padding: 8px;
+  }
+  .divTopRigthBtns {
+    flex-flow: row nowrap;
+    max-width: 200px;
+  }
+  .divTopRigthBtnsItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    margin: 10px;
+  }
+  /* NAVBAR */
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navListOptions {
+    display: flex;
+    flex-direction: column;
+  }
+  .navListOptions a {
+    width: 100%;
+    text-align: center;
+    margin: 3px 0;
+    border: 1px solid var(--secondary-color);
+    padding: 5px 0px;
+    background-color: var(--secondary-color);
+  }
+  .navInput {
+    width: 90%;
+  }
+  /************************************************************
+                            SECTIONS 
+  ************************************************************/
+  .sectionImgs {
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .sectionTextBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .horizontalBanner {
+    display: none;
+  }
+}

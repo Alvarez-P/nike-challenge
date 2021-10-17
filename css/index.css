@@ -1,0 +1,206 @@
+/************************************************************
+                            GENERAL 
+************************************************************/
+
+/** Values **/
+
+:root {
+  --main-color: black;
+  --white: #fff;
+  --secondary-color: #e6e6e6;
+  --third-color: #222222;
+  --fifth-color: #d6d6d6;
+}
+
+/** Base Element Styles **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  color: var(--main-color);
+  min-height: 100vh;
+  font-weight: 400;
+}
+
+figure img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+header, section, footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/** Base Classes **/
+
+.divToRow {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3px;
+}
+
+.btnDefault {
+  background-color: var(--third-color);
+  color: var(--white);
+  padding: 8px 15px;
+  border-radius: 2px;
+}
+
+/************************************************************
+                            HEADER 
+************************************************************/
+
+.divTopHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.divTopHeader a {
+  font-size: 0.8rem;
+}
+
+.divTopLeftHeader {
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+  border: 1px solid var(--secondary-color);
+}
+
+.divTopLeftHeader a {
+  padding: 0 20px;
+}
+
+.divTopRigthLogin {
+  align-items: center;
+}
+
+.divTopRigthBtns {
+  margin: 0 10px;
+}
+
+.divTopRigthBtns figure {
+  max-width: 30px;
+}
+
+/* NAVBAR */
+
+nav {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLogo figure {
+  max-width: 50px;
+}
+
+.navListOptions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  max-width: 600px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.navInput input {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+}
+
+.navInput {
+  display: flex;
+  align-items: center;
+}
+
+/************************************************************
+                            SECTIONS
+************************************************************/
+
+.separator {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--fifth-color);
+  border-bottom: 1px solid var(--fifth-color);
+  background-color: var(--secondary-color);
+}
+
+section {
+  width: 100%;
+}
+
+.sectionImgs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.verticalBanner {
+  max-width: 420px;
+}
+
+.sectionLast {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  background: url('../img/calltoaction.jpg');
+  height: 450px;
+  max-height: 500px;
+  color: var(--white);
+}
+
+.sectionLast a {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+
+/************************************************************
+                            FOOTER 
+************************************************************/
+
+footer {
+  background-color: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+footer a {
+  color: var(--white);
+  font-weight: bold;
+}
